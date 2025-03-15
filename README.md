@@ -102,6 +102,7 @@ $filters = [
 
 ## Автор
 👤 Денис Усманов
+
 GitHub: [denius-dev](https://github.com/denius-dev)  
 Telegram: [@denius_dev](https://t.me/denius_dev)
 
