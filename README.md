@@ -31,8 +31,7 @@
    ```bash
    git clone https://github.com/ваш-username/telegram-karma-bot.git
    cd telegram-karma-bot
-
-   Настройте конфигурацию:
+Настройте конфигурацию:
 
 Откройте файл config.php и укажите:
 
@@ -138,3 +137,5 @@ Telegram: @ваш-username
 Спасибо MODX за мощную CMS.
 
 Спасибо Telegram Bot API за удобный API.
+
+Если у вас есть вопросы или предложения, создайте Issue или свяжитесь со мной через Telegram.
