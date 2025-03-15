@@ -24,8 +24,8 @@
 
 2. **Клонируйте репозиторий**:
    ```bash
-   git clone https://github.com/ваш-username/telegram-karma-bot.git
-   cd telegram-karma-bot
+   git clone https://github.com/ваш-username/modx_rsc_karmabot.git
+   cd modx_rsc_karmabot
    ```
 
 3. **Настройте конфигурацию**:
