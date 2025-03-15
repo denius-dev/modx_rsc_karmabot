@@ -101,7 +101,7 @@ $filters = [
 5. Создайте Pull Request.
 
 ## Автор
-👤 Ваше имя  
+👤 Денис Усманов
 GitHub: [denius-dev](https://github.com/denius-dev)  
 Telegram: [@denius_dev](https://t.me/denius_dev)
 
