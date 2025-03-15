@@ -73,9 +73,9 @@
   ```
   🏆 Топ 20 пользователей по карме:
   
-  @UserB: 10
-  @UserC: 8
-  @UserA: 5
+  Пользователь B (@UserB): 10
+  Пользователь C (@UserC): 8
+  Пользователь A (@UserA): 5
   ...
   ```
 
@@ -102,8 +102,8 @@ $filters = [
 
 ## Автор
 👤 Ваше имя  
-GitHub: [ваш-username](https://github.com/ваш-username)  
-Telegram: [@ваш-username](https://t.me/ваш-username)
+GitHub: [denius-dev](https://github.com/denius-dev)  
+Telegram: [@denius_dev](https://t.me/denius_dev)
 
 ## Благодарности
 Спасибо MODX за мощную CMS.  
