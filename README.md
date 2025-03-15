@@ -43,9 +43,9 @@
    - Загрузите файлы на ваш сервер (например, через FTP или SSH).
 
 6. **Настройте вебхук**:
-   - Укажите URL вашего бота в Telegram с помощью API:
-     ```bash
-     curl -F "url=https://ваш-домен.com/path-to-bot/index.php" https://api.telegram.org/bot<ваш-токен>/setWebhook
+   - Укажите URL вашего бота в Telegram с помощью ссылки:
+     ```
+     https://api.telegram.org/bot<ваш-токен>/setWebhook?url=https://ваш-домен.ru/karmabot/index.php
      ```
 
 ## Использование
