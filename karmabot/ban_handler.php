@@ -1,9 +1,15 @@
 <?php
 
 function sendBanMessageAndDelete($chatId, $userId, $username, $botToken) {
+    if ($username) {
+        $responseText = "Пользователь @$username забанен за рекламу.";
+    } else {
+        $responseText = "Спамер забананен 🍌";
+    }
+
     $response = [
         'chat_id' => $chatId,
-        'text' => "Пользователь @$username забанен за рекламу.",
+        'text' => "$responseText",
     ];
 
     $apiUrl = "https://api.telegram.org/bot$botToken/sendMessage?" . http_build_query($response);
