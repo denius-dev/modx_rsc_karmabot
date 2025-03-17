@@ -29,3 +29,53 @@ function normalizeText($text) {
     $text = preg_replace('/\s+/u', ' ', $text);
     return trim($text);
 }
+
+// Функция для получения ответа от API
+function getAIResponse($message) {
+    global $apiKey, $apiUrl;
+
+    // Данные для запроса
+    $data = [
+        'model' => 'deepseek-r1-zero:free', // Список моделей - https://bothub.chat/models
+        'messages' => [
+            ['role' => 'user', 'content' => $message]
+        ]
+    ];
+
+    // Настройки HTTP-запроса
+    $options = [
+        'http' => [
+            'header'  => "Content-type: application/json\r\nAuthorization: Bearer $apiKey",
+            'method'  => 'POST',
+            'content' => json_encode($data),
+        ],
+    ];
+
+    // Создаём контекст запроса
+    $context  = stream_context_create($options);
+
+    // Отправляем запрос
+    $response = file_get_contents($apiUrl, false, $context);
+
+    // Обработка ошибок
+    if ($response === FALSE) {
+        $error = error_get_last();
+        return "Ошибка при запросе к API: " . $error['message'];
+    }
+
+    // Декодируем ответ
+    $responseData = json_decode($response, true);
+
+    // Проверяем, есть ли ошибка в ответе
+    if (isset($responseData['error'])) {
+        return "Ошибка API: " . $responseData['error']['message'];
+    }
+
+    // Проверяем, есть ли ответ
+    if (!isset($responseData['choices'][0]['message']['content'])) {
+        return "Не удалось получить ответ от API.";
+    }
+
+    // Возвращаем ответ
+    return $responseData['choices'][0]['message']['content'];
+}
