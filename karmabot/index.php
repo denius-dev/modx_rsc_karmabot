@@ -8,6 +8,9 @@ error_reporting(E_ALL);
 // Подключение конфигурации
 require_once 'config.php';
 
+// Подключение фильтров
+require_once 'filters.php';
+
 // Подключение MODX
 require_once 'modx_connection.php';
 
