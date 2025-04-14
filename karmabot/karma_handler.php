@@ -1,7 +1,7 @@
 <?php
 
 function getKarmaField($chatId) {
-    return ($chatId == -1001160891149) ? 'fkarma' : 'karma';
+    return ($chatId == -1001111111111) ? 'fkarma' : 'karma';
 }
 
 function handleKarma($message) {
